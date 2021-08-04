@@ -45,7 +45,7 @@ function generateItems(items) {
         doc.innerHTML = `
     
         <div class="image">
-                <img src="${item.image}" alt="">
+                <img src=${item.image} alt="">
                 <a href="#" class="fas fa-heart"></a>
             </div>
             <div class="content">
