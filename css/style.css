@@ -624,17 +624,16 @@ header .icons #menu-bars{
     flex-direction: column;
 }
 .table-titles {
-    margin-top: 6rem;
+    margin-top: 4rem;
     font-size: 1.2rem;
     font-weight: 600;
     font-family: Nunito;
     width: 90vw;
     display: flex;
-    justify-content: space-evenly;
+
 }
 .table-product {
     flex-grow: 1;
-
 }
 .table-count{
     width: 12rem;
@@ -646,7 +645,8 @@ header .icons #menu-bars{
     width:2.5rem;
 }
 .cart-items {
-    margin-top: 1.25rem
+    margin-top: 1rem;
+    padding:2rem;
 }
 .complete-order{
     display: flex;
@@ -666,7 +666,91 @@ header .icons #menu-bars{
     margin: 2rem;
 }
 
+.cart-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+.cart-item-image{
+    width: 10rem;
+    height: 6rem;
+    margin-right: 2rem;
 
+}
+.cart-img{
+    width: 100%;
+    height: 100%;
+    margin-right: 2rem;
+}
+.cart-item-details{
+    flex-grow: 1;
+}
+
+.cart-item-title{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #666;
+    margin-right: 2rem;
+}
+.cart-item-counter{
+    width: 12rem;
+    display: flex;
+    align-items: center;
+}
+.cart-item-decrease{
+    color: #666;
+    background-color: #ccc;
+    border-radius: 2px;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.cart-item-decrease:hover{
+    background-color: azure;
+}
+.text-cart-quantity{
+    color: gray;
+}
+
+.cart-item-increase{
+    color: #666;
+    background-color: #ccc;
+    border-radius: 2px;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.cart-item-increase:hover{
+    background-color: azure;
+}
+.cart-item-total-cost{
+    width: 12rem;
+    font-weight: bolder;
+    color: gray;
+    font-size: 1.4rem;
+}
+.cart-item-delete{
+    width: 2.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: darkgrey;
+    cursor: pointer;
+}
+.cart-item-delete:hover{
+    color: grey;
+}
 
 
 
