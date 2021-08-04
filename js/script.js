@@ -1,8 +1,8 @@
-let menu = document.querySelector('#menu-bars');
+let menu1 = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
-menu.onclick = () =>{
-  menu.classList.toggle('fa-times');
+menu1.onclick = () =>{
+  menu1.classList.toggle('fa-times');
   navbar.classList.toggle('active');
 }
 
@@ -11,7 +11,7 @@ let navLinks = document.querySelectorAll('header .navbar a');
 
 window.onscroll = () =>{
 
-  menu.classList.remove('fa-times');
+  menu1.classList.remove('fa-times');
   navbar.classList.remove('active');
 
   section.forEach(sec =>{

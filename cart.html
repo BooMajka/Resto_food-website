@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Food Website Design Tutorial</title>
+
+    <!--- firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/order.js"></script>
+   
+    <script src="js/script.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts      -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>resto.</a>
+
+    <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#dishes">dishes</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#review">review</a>
+        <a href="#order">order</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="icon-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="cart-item-number">1</div>
+        </a>
+    </div>
+
+</header>
+
+<!-- header section ends-->
+
+<!-- search form  -->
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+<!-- home section starts  -->
+
+<section class="about" id="about">
+
+    <h3 class="sub-heading cart-heading"> Your cart</h3>
+    <h1 class="heading"> review your order </h1>
+
+    <div class="row cart-row">
+
+        <div class="table-titles">
+            <h2 class="table-product">Product</h2>
+            <h2 class="table-count">Count</h2>
+            <h2 class="table-total">Total Cost</h2>
+            <span class="w-10"></span>
+        </div>
+
+
+        <div class="cart-items">
+            <!-- Cart Items from DB -->
+        </div>
+
+
+        <div class="complete-order">
+            <div class="total-cost">
+                <h2 class="text">Total Cost</h2>
+                <div class="total-cost-number">
+                    $1,439.00
+                </div>
+            </div>
+            <div class="btn btn-cart" >
+                Complete Order
+            </div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
